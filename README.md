@@ -19,9 +19,11 @@ In this type, we have a Child-Component and a Parent-Component
   </div>
   ```
 - Parent Component
-  `  <app-weather-widget>
+  ```
+  <app-weather-widget>
     <p>Hello there</p>
-</app-weather-widget>`
+  </app-weather-widget>
+  ```
   We basically provide the markup we want projected into our Child-Component.
 
 We also have to take note that angular will project content to the last slot provided that no `select` attribute is provided. In the example below, all the markup content provided in the Parent-Component will be projected to the last slot.
