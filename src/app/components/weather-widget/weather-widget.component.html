@@ -1,6 +1,11 @@
 <div>
   <h1>Header</h1>
-  <ng-content select="['headerSlot']"></ng-content>
+  <!-- <ng-content 
+    select=".firstContainer, .secondContainer">
+  </ng-content> -->
+  <ng-content 
+    select="[.firstContainer, .secondContainer]">
+  </ng-content>
   <br />
 
   <h2>Footer</h2>
