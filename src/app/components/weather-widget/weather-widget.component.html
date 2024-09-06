@@ -9,7 +9,8 @@
 
   <h2>Footer</h2>
   <div *ngIf="hidden()">
-    <ng-content></ng-content>
+    <ng-container [ngTemplateOutlet]="footerContent || noContent"></ng-container>
+    <ng-template #noContent> 🫎Nothing-ness to the beyond🐮 </ng-template>
   </div>
 
   <button (click)="hidden.set(!hidden())">
