@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 
 @Component({
   selector: 'app-weather-widget',
@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./weather-widget.component.scss']
 })
 export class WeatherWidgetComponent {
-
+  hidden = signal<boolean>(false)
 }

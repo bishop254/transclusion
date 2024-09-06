@@ -5,9 +5,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { WeatherWidgetComponent } from './components/weather-widget/weather-widget.component';
 import { ButtonWidgetComponent } from './components/button-widget/button-widget.component';
+import { FooterWidgetComponent } from './components/footer-widget/footer-widget.component';
 
 @NgModule({
-  declarations: [AppComponent, WeatherWidgetComponent, ButtonWidgetComponent],
+  declarations: [AppComponent, WeatherWidgetComponent, ButtonWidgetComponent, FooterWidgetComponent],
   imports: [BrowserModule, AppRoutingModule],
   bootstrap: [AppComponent],
 })

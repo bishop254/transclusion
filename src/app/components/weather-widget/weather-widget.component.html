@@ -2,10 +2,17 @@
   <h1>Header</h1>
   <ng-content select="['headerSlot']"></ng-content>
   <app-button-widget>
-      <ng-content ngProjectAs="buttonText" select="['btnText']"></ng-content>
-      <ng-content ngProjectAs="buttonIcon" select="['btnIcon']"></ng-content>
+    <ng-content ngProjectAs="buttonText" select="['btnText']"></ng-content>
+    <ng-content ngProjectAs="buttonIcon" select="['btnIcon']"></ng-content>
   </app-button-widget>
   <br />
+
   <h2>Footer</h2>
-  <ng-content></ng-content>
+  <div *ngIf="hidden()">
+    <ng-content></ng-content>
+  </div>
+
+  <button (click)="hidden.set(!hidden())">
+    {{ !hidden() ? "Unhide footer" : "Hide footer" }}
+  </button>
 </div>
