@@ -4,6 +4,8 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## USEFUL LINKS
 
+https://docs.google.com/presentation/d/1hmfqNrJA4r2IF-dQE2YSAkOfw62i3nqfSzSc_m9uxBs/edit?usp=drivesdk
+
 [MDN DOCS slot ref](https://developer.mozilla.org/en-US/docs/Web/API/Web_components/Using_templates_and_slots)
 
 `The <ng-content> element is neither a component nor DOM element. Instead, it is a special placeholder that tells Angular where to render content. Angular's compiler processes all <ng-content> elements at build-time. You cannot insert, remove, or modify <ng-content> at run time. You cannot add directives, styles, or arbitrary attributes to <ng-content>.`
